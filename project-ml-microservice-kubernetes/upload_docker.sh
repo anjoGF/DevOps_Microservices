@@ -11,11 +11,9 @@ export dockerpath=antongordon76/mlproject
 # Step 2:  
 # Authenticate & tag
 echo "Docker ID and Image: $dockerpath"
-docker login antongordon76
-docker tag antongordon76/mlproject:latest antongordon76/mlproject:$epoch
-
+docker login --username=antongordon76
+docker tag antongordon76/mlproject:latest 
 
 # Step 3:
 # Push image to a docker repository
-docker push antongordon76/mlproject:latest
-docker push antongordon76/mlproject:$epoch
+docker push antongordon76/mlproject
