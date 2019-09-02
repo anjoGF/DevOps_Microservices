@@ -1,11 +1,9 @@
 #!/usr/bin/env bash
 # This file tags and uploads an image to Docker Hub
-
 # Assumes that an image is built via `run_docker.sh`
 
 # Step 1:
 # Create dockerpath
-export epoch=$(date +"%s")
 export dockerpath=antongordon76/mlproject
 
 # Step 2:  
