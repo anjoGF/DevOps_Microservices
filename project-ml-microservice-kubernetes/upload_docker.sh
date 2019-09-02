@@ -6,7 +6,7 @@
 # Step 1:
 # Create dockerpath
 export epoch=$(date +"%s")
-export dockerpath=akhildn/mlproject
+export dockerpath=antongordon76/mlproject
 
 # Step 2:  
 # Authenticate & tag
