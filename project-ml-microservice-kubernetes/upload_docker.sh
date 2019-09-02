@@ -5,11 +5,17 @@
 
 # Step 1:
 # Create dockerpath
-# dockerpath=<your docker ID/path>
+export epoch=$(date +"%s")
+export dockerpath=akhildn/mlproject
 
 # Step 2:  
 # Authenticate & tag
 echo "Docker ID and Image: $dockerpath"
+docker login antongordon76
+docker tag antongordon76/mlproject:latest antongordon76/mlproject:$epoch
+
 
 # Step 3:
 # Push image to a docker repository
+docker push antongordon76/mlproject:latest
+docker push antongordon76/mlproject:$epoch
