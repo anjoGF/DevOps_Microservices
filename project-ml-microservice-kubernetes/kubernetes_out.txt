@@ -1,0 +1,14 @@
+kubectl run --generator=deployment/apps.v1beta1 is DEPRECATED and will be removed in a future version. Use kubectl create instead.
+Error from server (AlreadyExists): deployments.apps "boston-housing2" already exists
+NAME                               READY   STATUS    RESTARTS   AGE
+boston-housing-5b7dcbd4b5-x554m    1/1     Running   0          12m
+boston-housing2-7fccb8f6f5-nw52p   1/1     Running   0          70s
+Forwarding from 127.0.0.1:8000 -> 80
+Handling connection for 8000
+
+Port: 8000
+{
+  "prediction": [
+    20.35373177134412
+  ]
+}
