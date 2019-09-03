@@ -16,4 +16,4 @@ kubectl get pods
 
 # Step 4:
 # Forward the container port to a host
-kubectl expose deployment boston-housing --type=LoadBalancer --port=80
+kubectl expose deployment boston-housing --type=LoadBalancer --port=80 --target-port=8000
