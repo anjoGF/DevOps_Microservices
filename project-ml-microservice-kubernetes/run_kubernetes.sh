@@ -8,7 +8,7 @@ dockerpath=antongordon76/boston_housing
 
 # Step 2
 # Run the Docker Hub container with kubernetes
-kubectl run boston-housing --image=antongordon76/boston_housing --port 8000
+kubectl run boston-housing2 --image=antongordon76/boston_housing --port 8000
 
 # Step 3:
 # List kubernetes pods
@@ -16,4 +16,4 @@ kubectl get pods
 
 # Step 4:
 # Forward the container port to a host
-kkubectl port-forward deployment/boston-housing  8000:80
+kubectl port-forward deployment/boston-housing2  8000:80
