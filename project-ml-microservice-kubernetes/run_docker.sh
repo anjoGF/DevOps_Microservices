@@ -12,4 +12,4 @@ docker images -a
 
 # Step 3: 
 # Run flask app
-docker run -it -p 8000:8000 antongordon76/mlproject:latest
+docker run -it -p 8000:80 antongordon76/mlproject:latest
