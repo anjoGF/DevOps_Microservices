@@ -27,11 +27,8 @@ jobs:
         paths:
         - ./venv
         key: v1-dependencies-{{ checksum "requirements.txt" }}
-    - run:
-        name: run lint
-        command: ". venv/bin/activate\nmake lint \n"
-workflows:
-  version: 2
-  workflow:
-    jobs:
-    - build
+  - run:
+      name: run lint
+      command: |
+        . venv/bin/activate
+        make lint
